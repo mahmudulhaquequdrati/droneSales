@@ -66,9 +66,7 @@ const Footer = () => {
       </div>
       <hr className="bg-white w-3/4 mx-auto" />
       <div className="text-center py-4">
-        <p>
-          <small>{"\u00a9"}2021 Mahmud Qudrati . All Right Reserves</small>
-        </p>
+        <small>{"\u00a9"}2021 Mahmud Qudrati . All Right Reserves</small>
       </div>
     </div>
   );
