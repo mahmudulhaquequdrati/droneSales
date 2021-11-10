@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km..",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 2,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 3,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 4,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 5,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 6,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 7,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  },
+  {
+    "id": 8,
+    "name": "DJI MAVIC 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
+    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+  }
+]
