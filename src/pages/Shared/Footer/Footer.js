@@ -60,7 +60,7 @@ const Footer = () => {
             <input class="border h-10 w-full rounded-lg border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent ..." />
           </div>
           <button class="px-4 py-2 w-3/4  bg-purple-600 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...">
-            Subscribe
+            Subscribe Now
           </button>
         </form>
       </div>
