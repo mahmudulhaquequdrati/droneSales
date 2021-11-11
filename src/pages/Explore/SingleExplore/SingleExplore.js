@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SingleExplore = ({ product }) => {
   const { name, img, description } = product;
@@ -19,9 +20,11 @@ const SingleExplore = ({ product }) => {
           </div>
 
           <p className="mt-2 text-gray-500">{description}</p>
-          <button className="bg-purple-900 text-md font-semibold text-white mt-2 px-4 py-2 rounded-lg">
-            Buy Now
-          </button>
+          <Link to="/placeorder">
+            <button className="bg-purple-900 text-md font-semibold text-white mt-2 px-4 py-2 rounded-lg">
+              Buy Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

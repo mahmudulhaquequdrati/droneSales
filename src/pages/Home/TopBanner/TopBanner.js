@@ -2,7 +2,7 @@ import React from "react";
 
 const TopBanner = () => {
   return (
-    <div className="relative bg-white overflow-hidden pt-2">
+    <div className="relative bg-purple-100 overflow-hidden pt-2">
       <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
           <div className="sm:max-w-lg">
@@ -83,8 +83,7 @@ const TopBanner = () => {
               </div>
 
               <a
-                href="h"
-                id="explore"
+                href="#products"
                 className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
               >
                 Explore Today

@@ -6,6 +6,7 @@ import DashBoard from "./pages/DashBoard/DashBoard/DashBoard";
 import Explore from "./pages/Explore/Explore";
 import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
+import PlaceOrder from "./pages/PlaceOrder/PlaceOrder";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/dashboard">
             <DashBoard />
+          </Route>
+          <Route path="/placeorder">
+            <PlaceOrder />
           </Route>
           <Route path="*">
             <NotFound></NotFound>

@@ -23,9 +23,11 @@ const OurSpeciality = () => {
               can make Drone Photography special. You can get an incredible
               cinematic video for any needs to start your journey.
             </p>
-            <button className="font-semibold my-2 rounded px-4 py-2 bg-purple-700 text-white">
-              Explore more
-            </button>
+            <a href="#products">
+              <button className="font-semibold my-2 rounded px-4 py-2 bg-purple-700 text-white">
+                Explore more
+              </button>
+            </a>
           </div>
         </div>
         <div className="w-96 lg:w-full sm:w-full md:w-full mx-auto rounded-md px-8 py-4 ">

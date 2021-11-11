@@ -4,7 +4,7 @@ import SingleReview from "./SingleReview.js/SingleReview";
 const Review = () => {
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("/review.json")
+    fetch("http://localhost:5000/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);
@@ -15,7 +15,7 @@ const Review = () => {
       </h2>
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 m-16 ">
         {reviews.map((review) => (
-          <SingleReview review={review} key={review.id}></SingleReview>
+          <SingleReview review={review} key={review._id}></SingleReview>
         ))}
       </div>
     </div>

@@ -15,7 +15,7 @@ function classNames(...classes) {
 
 const Navigation = () => {
   return (
-    <Disclosure as="nav" className="bg-gray-400">
+    <Disclosure as="nav" className="bg-purple-400 ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">

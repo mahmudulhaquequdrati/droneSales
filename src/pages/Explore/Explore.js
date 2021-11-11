@@ -6,7 +6,7 @@ import SingleExplore from "./SingleExplore/SingleExplore";
 const Explore = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("/products.json")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -15,7 +15,7 @@ const Explore = () => {
       <Navigation></Navigation>
       <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mx-8 my-16 ">
         {products.map((product) => (
-          <SingleExplore key={product.id} product={product}></SingleExplore>
+          <SingleExplore key={product._id} product={product}></SingleExplore>
         ))}
       </div>
       <Footer></Footer>

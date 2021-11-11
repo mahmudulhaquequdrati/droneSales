@@ -1,50 +1,51 @@
 [
   {
     "id": 1,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km..",
+    "name": "DJI Mavic 3",
+    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience.",
     "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
   },
   {
     "id": 2,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "DJI Mavic 2 Air",
+    "description": "Mavic Air 2 takes power and portability to the next level, offering advanced features in a compact form factor. Intelligent shooting functions and excellent image quality put aerial masterpieces within reach.",
+    "img": "https://images.unsplash.com/photo-1626122666446-512b1a5324b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
   },
   {
     "id": 3,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "Phantom 4 Pro",
+    "description": "Draw is a brand new technology for waypoint control. Simply draw a route on screen and the Phantom 4 Pro will move in that direction while keeping its altitude locked.This allows the pilot to focus on camera control",
+    "img": "https://www3.djicdn.com/assets/images/products/phantom-4-pro/s2-product-dbb06ba8827281e30669e5e172a2a4df.jpg"
   },
   {
     "id": 4,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "DJI Mavic 2 zoom",
+    "description": "Like the Mavic 2 Pro, the Mavic 2 Zoom landed back in August 2018, which means it's largely been succeeded by the newer Air 2S and Mavic 3 (see above). But despite the latter's inclusion of a 162mm telephoto lens,",
+    "img": "https://cdn.mos.cms.futurecdn.net/rtrurWHq2ansXcNz8PPYvA-970-80.jpg.webp"
   },
+
   {
     "id": 5,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "Ryze Tello",
+    "description": "We set out to build the most fun drone ever, and we came up with Tello an impressive little drone for adults that’s a blast to fly and learn about drones with coding education. Tello to find out just how awesome flying can be!",
+    "img": "https://images.unsplash.com/photo-1488263590619-bc1fff43b6c1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
   },
   {
     "id": 6,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "Power Eye",
+    "description": "The PowerEgg X features strong face recognition capabilities. Its face recognition accuracy is continuously improved through deep learning training to follow the object when taking a photo or recording a video.",
+    "img": "https://www.powervision.me/pv/images/eye/powereye.jpg"
   },
   {
     "id": 7,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "Fimi X8 mini",
+    "description": "While we think the DJI Mini 2 is the better mini drone overall, the impressive FIMI X8 Mini is a more affordable alternative – and well worth considering if you can't stretch to the Mini 2's price tag.",
+    "img": "https://www.fimi.com/static/images/drone/x8mini/02.jpg"
   },
   {
     "id": 8,
-    "name": "DJI MAVIC 3",
-    "description": "DJI Mavic 3 is a powerful flagship camera drone equipped with a 4/3 CMOS Hasselblad camera to facilitate professional-level imaging. It also offers omnidirectional obstacle sensing for a smooth flight experience, a max flight time of 46 minutes, and a max transmission range of 15 km.",
-    "img": "https://images.unsplash.com/photo-1553165558-424ffa9c4303?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+    "name": "DJI FPV",
+    "description": "DJI FPV stands out in more ways than one. Sporting front LEDs and aircraft arm lights with customizable-color, DJI FPV allows pilots to make their aircraft as unique as they are.Get a feel for what it is like to own DJI FPV.",
+    "img": "https://dji-official-fe.djicdn.com/cms/uploads/cf81d5481db6da01d9413292eef0da48.png"
   }
 ]
