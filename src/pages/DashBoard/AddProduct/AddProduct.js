@@ -8,7 +8,7 @@ const AddProduct = () => {
     reset();
 
     // send data to the server
-    fetch("http://localhost:5000/products", {
+    fetch("https://drone-sales-2021.herokuapp.com/products", {
       method: "POST",
       headers: {
         "content-type": "application/json",

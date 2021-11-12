@@ -122,7 +122,7 @@ const Register = () => {
                     aria-hidden="true"
                   />
                 </span>
-                Sign in
+                Register
               </button>
               <div className="w-56 mx-auto text-blue-700 mt-4">
                 <Link to="/login">

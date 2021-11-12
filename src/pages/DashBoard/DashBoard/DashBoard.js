@@ -10,10 +10,13 @@ import UserReview from "../Review/UserReview";
 import ManageAllOrders from "../ManageAllOrders/ManageAllOrders";
 import Footer from "../../Shared/Footer/Footer";
 import AddProduct from "../AddProduct/AddProduct";
+import MakeAdmin from "../MakeAdmin/MakeAdmin";
+import AdminRoute from "../../Login/AdminRoute/AdminRoute";
+import AllProducts from "../AllProducts/AllProducts";
 
 const DashBoard = () => {
   let { path, url } = useRouteMatch();
-  const { logOut } = useAuth();
+  const { logOut, admin } = useAuth();
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   return (
     <div className="bg-purple-200">
@@ -71,31 +74,51 @@ const DashBoard = () => {
                         Home
                       </button>
                     </Link>
+
                     <Link to={`${url}`}>
                       <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
                         My Order
                       </button>
                     </Link>
-                    <Link to={`${url}/allOrders`}>
-                      <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
-                        Manage All Orders
-                      </button>
-                    </Link>
-                    <Link to={`${url}/addProduct`}>
-                      <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
-                        Add a Product
-                      </button>
-                    </Link>
-                    <Link to={`${url}/pay`}>
-                      <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
-                        Pay
-                      </button>
-                    </Link>
-                    <Link to={`${url}/userreview`}>
-                      <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
-                        Review
-                      </button>
-                    </Link>
+
+                    {admin && (
+                      <div>
+                        <Link to={`${url}/allOrders`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
+                            Manage Orders
+                          </button>
+                        </Link>
+                        <Link to={`${url}/allProducts`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
+                            Manage Products
+                          </button>
+                        </Link>
+                        <Link to={`${url}/makeAdmin`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                            Make Admin
+                          </button>
+                        </Link>
+                        <Link to={`${url}/addProduct`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                            Add a Product
+                          </button>
+                        </Link>
+                      </div>
+                    )}
+                    {!admin && (
+                      <div>
+                        <Link to={`${url}/pay`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
+                            Payment
+                          </button>
+                        </Link>
+                        <Link to={`${url}/userreview`}>
+                          <button className="block w-5/6 mx-auto my-2 bg-green-400 text-gray-100 py-2 px-8 rounded-lg">
+                            Review
+                          </button>
+                        </Link>
+                      </div>
+                    )}
 
                     <button
                       onClick={logOut}
@@ -153,31 +176,51 @@ const DashBoard = () => {
                   <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
                     <Link to="/">Home</Link>
                   </button>
+
                   <Link to={`${url}`}>
                     <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
                       My Orders
                     </button>
                   </Link>
-                  <Link to={`${url}/allOrders`}>
-                    <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
-                      Manage All Orders
-                    </button>
-                  </Link>
-                  <Link to={`${url}/addProduct`}>
-                    <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
-                      Add a Product
-                    </button>
-                  </Link>
-                  <Link to={`${url}/pay`}>
-                    <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
-                      Pay
-                    </button>
-                  </Link>
-                  <Link to={`${url}/userreview`}>
-                    <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
-                      Review
-                    </button>
-                  </Link>
+
+                  {admin && (
+                    <div>
+                      <Link to={`${url}/allOrders`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Manage Orders
+                        </button>
+                      </Link>
+                      <Link to={`${url}/allProducts`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Manage Products
+                        </button>
+                      </Link>
+                      <Link to={`${url}/makeAdmin`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Make Admin
+                        </button>
+                      </Link>
+                      <Link to={`${url}/addProduct`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Add a Product
+                        </button>
+                      </Link>
+                    </div>
+                  )}
+                  {!admin && (
+                    <div>
+                      <Link to={`${url}/pay`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Payment
+                        </button>
+                      </Link>
+                      <Link to={`${url}/userreview`}>
+                        <button className="block w-full my-2 bg-green-400 text-gray-100 py-2 px-8 md:px-4  rounded-lg">
+                          Review
+                        </button>
+                      </Link>
+                    </div>
+                  )}
 
                   <button
                     onClick={logOut}
@@ -195,12 +238,18 @@ const DashBoard = () => {
                       <Route exact path={path}>
                         <MyOrder></MyOrder>
                       </Route>
-                      <Route path={`${path}/allOrders`}>
+                      <AdminRoute path={`${path}/allOrders`}>
                         <ManageAllOrders />
-                      </Route>
-                      <Route path={`${path}/addProduct`}>
+                      </AdminRoute>
+                      <AdminRoute path={`${path}/allProducts`}>
+                        <AllProducts />
+                      </AdminRoute>
+                      <AdminRoute path={`${path}/addProduct`}>
                         <AddProduct />
-                      </Route>
+                      </AdminRoute>
+                      <AdminRoute path={`${path}/makeAdmin`}>
+                        <MakeAdmin />
+                      </AdminRoute>
                       <Route path={`${path}/pay`}>
                         <Pay></Pay>
                       </Route>

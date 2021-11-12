@@ -107,7 +107,7 @@ const Login = () => {
             onClick={handleGoogleSignIn}
             className="rounded-md border border-gray-400 px-4 py-1 hover:bg-red-700 hover:text-white mt-2 googleSignInBtn"
           >
-            <i class="googleIcon fab fa-google-plus-g text-red-600  h-5 my-auto"></i>{" "}
+            <i className="googleIcon fab fa-google-plus-g text-red-600  h-5 my-auto"></i>{" "}
             Google
           </button>
         </div>
