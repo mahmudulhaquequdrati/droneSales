@@ -2,6 +2,7 @@ import React from "react";
 import { Disclosure, Menu } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 
 const navigation = [
   { name: "Home", to: "/" },
@@ -14,11 +15,13 @@ function classNames(...classes) {
 }
 
 const Navigation = () => {
+  const { user, logOut } = useAuth();
+
   return (
     <Disclosure as="nav" className="bg-purple-400 ">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 md:pl-2 md:pr-2">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
@@ -31,7 +34,7 @@ const Navigation = () => {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-center lg:justify-start md:justify-start">
+              <div className=" flex flex-1 justify-center sm:items-stretch sm:justify-center lg:justify-start md:justify-start">
                 <div className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
@@ -48,7 +51,7 @@ const Navigation = () => {
                   </span>
                 </div>
                 <div className="hidden md:block sm:ml-6">
-                  <div className="flex space-x-4 items-center">
+                  <div className="flex ">
                     {navigation.map((item) => (
                       <Link
                         key={item.name}
@@ -65,12 +68,14 @@ const Navigation = () => {
                     ))}
 
                     {/* should be dynamic */}
-                    <Link
-                      className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                      to="/dashboard"
-                    >
-                      DashBoard
-                    </Link>
+                    {user?.email && (
+                      <Link
+                        className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        to="/dashboard"
+                      >
+                        DashBoard
+                      </Link>
+                    )}
                   </div>
                 </div>
               </div>
@@ -78,19 +83,34 @@ const Navigation = () => {
                 {/* add some nav for user info like username nad many more */}
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative">
-                  <div>
-                    <button className="text-white hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded-lg ">
-                      LogIn
-                    </button>
 
-                    {/* should be dynamic */}
-                    <button className="text-white hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded-lg hidden">
-                      LogOut
-                    </button>
+                {/* try later */}
+                <div className="hidden lg:block md:block text-gray-100 pr-1">
+                  <span>
+                    {user?.email && (
+                      <div>
+                        <h2 className="text-sm">{user.displayName}</h2>
+                      </div>
+                    )}
+                  </span>
+                </div>
+                {/* should be dynamic */}
+                {user?.email ? (
+                  <button
+                    onClick={logOut}
+                    className="text-white hover:bg-gray-700 hover:text-white font-bold py-1 lg:py-2 lg:px-4 px-2 rounded-lg "
+                  >
+                    LogOut
+                  </button>
+                ) : (
+                  <div>
+                    <Link to="/login">
+                      <button className="text-white hover:bg-gray-700 hover:text-white font-bold py-2 px-4 rounded-lg ">
+                        LogIn
+                      </button>
+                    </Link>
                   </div>
-                  {/*  */}
-                </Menu>
+                )}
               </div>
             </div>
           </div>
@@ -113,12 +133,20 @@ const Navigation = () => {
               ))}
 
               {/* should be dynamic */}
-              <Link
-                className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium block"
-                to="/dashboard"
-              >
-                DashBoard
-              </Link>
+              {user?.email && (
+                <Link
+                  className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium block"
+                  to="/dashboard"
+                >
+                  DashBoard
+                </Link>
+              )}
+              {user?.email && (
+                <div className="text-white hover:bg-gray-700 hover:text-white px-3 pb-2 pt-1 rounded-md text-sm font-medium block">
+                  <span>Hello : </span>
+                  {user.displayName}
+                </div>
+              )}
             </div>
           </Disclosure.Panel>
         </>

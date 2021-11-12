@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import PlaceOrder from "../../PlaceOrder/PlaceOrder";
+// import PlaceOrder from "../../PlaceOrder/PlaceOrder";
 import SingleHomeProducts from "../SingleHomeProducts/SingleHomeProducts";
 
 const HomeProducts = () => {

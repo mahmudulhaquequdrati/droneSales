@@ -64,6 +64,19 @@ const Footer = () => {
           </button>
         </form>
       </div>
+      <div>
+        <p className="text-right  mr-4 pb-2 text-green-500">
+          image and icon used from{" "}
+          <a
+            href="https://www.freepik.com"
+            className="underline"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Here
+          </a>
+        </p>
+      </div>
       <hr className="bg-white w-3/4 mx-auto" />
       <div className="text-center py-4">
         <small>{"\u00a9"}2021 Mahmud Qudrati . All Right Reserves</small>

@@ -1,0 +1,12 @@
+form .customInput {
+  height: 30px;
+  margin: 5px 2px;
+  border-radius: 5px;
+  border-color: blueviolet;
+  padding: 15px 8px;
+}
+form .customTextArea {
+  border-radius: 5px;
+  border-color: blueviolet;
+  padding: 10px 8px;
+}
