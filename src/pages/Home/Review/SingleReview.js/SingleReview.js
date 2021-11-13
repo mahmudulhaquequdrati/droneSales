@@ -4,7 +4,7 @@ import Rating from "react-rating";
 const SingleReview = ({ review }) => {
   const { name, rating, img, reviewDescription } = review;
   return (
-    <div className="shadow rounded-lg">
+    <div className="h-72 m-8 w-96 shadow rounded-lg">
       <div className="pt-2">
         <div>
           <img className="w-28 h-28 mx-auto rounded-full" src={img} alt="" />
@@ -20,7 +20,7 @@ const SingleReview = ({ review }) => {
               fullSymbol="fas fa-star "
             />
           </div>
-          <p>{reviewDescription}</p>
+          <p className="w-72 mx-auto">{reviewDescription}</p>
         </div>
       </div>
     </div>

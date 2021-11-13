@@ -1,5 +1,19 @@
-import React, { useEffect, useState } from "react";
 import SingleReview from "./SingleReview.js/SingleReview";
+import React, { useEffect, useState } from "react";
+
+// from shuvo
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import "swiper/swiper.scss";
+
+import "swiper/modules/navigation/navigation.scss"; // Navigation module
+import "swiper/modules/pagination/pagination.scss"; // Pagination module
+
+// import Swiper core and required modules
+import SwiperCore, { Navigation } from "swiper";
+
+// install Swiper modules
+SwiperCore.use([Navigation]);
+// Import Swiper styles
 
 const Review = () => {
   const [reviews, setReviews] = useState([]);
@@ -10,14 +24,18 @@ const Review = () => {
   }, []);
   return (
     <div className="py-4">
-      <h2 className="text-3xl text-purple-500 text-center review-text">
+      <h2 className="text-3xl text-purple-500 my-4 text-center review-text">
         Reviews by clients
       </h2>
-      <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 m-16 ">
+
+      <Swiper slidesPerView={3} navigation={true} className="">
         {reviews.map((review) => (
-          <SingleReview review={review} key={review._id}></SingleReview>
+          <SwiperSlide>
+            <SingleReview review={review} key={review._id}></SingleReview>
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
+      {/* <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 m-16 "></div> */}
     </div>
   );
 };
