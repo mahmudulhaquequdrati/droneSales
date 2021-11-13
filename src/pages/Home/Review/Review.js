@@ -28,7 +28,7 @@ const Review = () => {
         Reviews by clients
       </h2>
 
-      <Swiper slidesPerView={3} navigation={true} className="">
+      <Swiper slidesPerView={"auto"} navigation={true} className="">
         {reviews.map((review) => (
           <SwiperSlide key={review._id}>
             <SingleReview review={review}></SingleReview>

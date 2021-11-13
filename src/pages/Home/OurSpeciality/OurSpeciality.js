@@ -4,7 +4,7 @@ const OurSpeciality = () => {
   return (
     <div className="my-24">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 xm:grid-cols-1 gap-4 lg:mx-16 md:mx-8 sm:mx-24 mx-8 ">
-        <div className="w-96 lg:w-full sm:w-full md:w-full mx-auto  rounded-md px-8 py-4">
+        <div className=" lg:w-full sm:w-full md:w-full mx-auto  rounded-md px-0 py-0 lg:px-4 lg:py-8 md:px-4 md:py-8">
           <div className=" flex items-center  lg:justify-start">
             {/* img and title */}
             <div className="w-20 my-2">
@@ -30,7 +30,7 @@ const OurSpeciality = () => {
             </a>
           </div>
         </div>
-        <div className="w-96 lg:w-full sm:w-full md:w-full mx-auto rounded-md px-8 py-4 ">
+        <div className="lg:w-full sm:w-full md:w-full mx-auto rounded-md px-0 py-0 lg:px-4 lg:py-8 md:px-4 md:py-8">
           <div className=" flex items-center  lg:justify-start">
             {/* img and title */}
             <div className="w-20 my-2">
@@ -54,7 +54,7 @@ const OurSpeciality = () => {
             </button>
           </div>
         </div>
-        <div className="w-96 lg:w-full sm:w-full md:w-full mx-auto rounded-md px-8 py-4 ">
+        <div className=" lg:w-full sm:w-full md:w-full mx-auto rounded-md px-0 py-0 lg:px-4 lg:py-8 md:px-4 md:py-8">
           <div className="flex items-center  lg:justify-start">
             {/* img and title */}
             <div className="w-20 my-2">

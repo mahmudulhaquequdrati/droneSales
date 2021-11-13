@@ -5,8 +5,8 @@ const SingleOrder = ({ order, handleDeleteUser }) => {
   const { _id, name, email, info, status } = order;
   const { productName, price, img } = info;
   return (
-    <div className="py-2 flex orders items-center ">
-      <div className=" flex  items-center py-2">
+    <div className="py-2 flex flex-col lg:flex-row md:flex-row  orders items-center ">
+      <div className=" flex items-center py-2">
         <img className="h-28 w-32 rounded-lg" src={img} alt="" />
         <div className="px-4">
           <h3 className="text-xl font-mono font-semibold">Order Info</h3>
@@ -19,9 +19,13 @@ const SingleOrder = ({ order, handleDeleteUser }) => {
           </div>
         </div>
       </div>
-      <div>Status : {status}</div>
-      <div className="mr-4   bg-red-600 text-white px-4 py-2 rounded-lg">
-        <button onClick={() => handleDeleteUser(_id)}>Cancel Order</button>
+      <div className="flex items-center my-4 lg:my-0 md:my-0 sm:my-4">
+        <h2 className="text-xs sm:text-xs md:text-base lg:text-base">
+          Status : {status}
+        </h2>
+        <div className="ml-2 text-xs sm:text-xs lg:text-base md:text-base bg-red-600 text-white lg:px-4 lg:py-2 md:px-4  px-2 py-1 rounded-lg">
+          <button onClick={() => handleDeleteUser(_id)}>Cancel Order</button>
+        </div>
       </div>
     </div>
   );
