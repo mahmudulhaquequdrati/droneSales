@@ -28,14 +28,13 @@ const Review = () => {
         Reviews by clients
       </h2>
 
-      <Swiper slidesPerView={"auto"} navigation={true} className="">
+      <Swiper navigation={true} className="">
         {reviews.map((review) => (
           <SwiperSlide key={review._id}>
             <SingleReview review={review}></SingleReview>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* <div className="grid lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6 m-16 "></div> */}
     </div>
   );
 };

@@ -20,7 +20,7 @@ const SingleReview = ({ review }) => {
               fullSymbol="fas fa-star "
             />
           </div>
-          <p className="w-72 mx-auto">{reviewDescription}</p>
+          <p className="w-full px-2 mx-auto">{reviewDescription}</p>
         </div>
       </div>
     </div>

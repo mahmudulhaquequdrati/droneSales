@@ -88,7 +88,7 @@ const useFirebase = () => {
       setIsLoading(false);
     });
     return () => unsubscribe;
-  }, []);
+  }, [auth]);
 
   // login
   const loginUser = (email, password, location, history) => {

@@ -4,8 +4,6 @@ import "./App.css";
 import AuthProvider from "./context/AuthProvider/AuthProvider";
 import About from "./pages/About/About";
 import DashBoard from "./pages/DashBoard/DashBoard/DashBoard";
-import Pay from "./pages/DashBoard/Pay/Pay";
-import UserReview from "./pages/DashBoard/Review/UserReview";
 import Explore from "./pages/Explore/Explore";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login/Login";

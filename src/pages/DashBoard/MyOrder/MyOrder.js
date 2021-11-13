@@ -11,7 +11,7 @@ const MyOrder = () => {
       .then((data) => {
         setOrders(data);
       });
-  }, []);
+  }, [user.email]);
 
   // DELETE
   const handleDeleteUser = (id) => {

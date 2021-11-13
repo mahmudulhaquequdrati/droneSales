@@ -43,7 +43,7 @@ const ManageAllOrders = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0) {
-          alert("go to My Order page to see");
+          alert("order updated successfully");
         }
       });
   };
