@@ -2,7 +2,7 @@ import React from "react";
 import "./SingleOrder.css";
 
 const SingleOrder = ({ order, handleDeleteUser }) => {
-  const { _id, name, email, info } = order;
+  const { _id, name, email, info, status } = order;
   const { productName, price, img } = info;
   return (
     <div className="py-2 flex orders items-center ">
@@ -19,6 +19,7 @@ const SingleOrder = ({ order, handleDeleteUser }) => {
           </div>
         </div>
       </div>
+      <div>Status : {status}</div>
       <div className="mr-4   bg-red-600 text-white px-4 py-2 rounded-lg">
         <button onClick={() => handleDeleteUser(_id)}>Cancel Order</button>
       </div>

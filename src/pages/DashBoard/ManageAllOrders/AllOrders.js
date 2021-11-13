@@ -1,8 +1,9 @@
 import React from "react";
 
-const AllOrders = ({ order, handleDeleteUser }) => {
-  const { _id, name, email, info } = order;
+const AllOrders = ({ order, handleDeleteUser, handleUpdate }) => {
+  const { _id, name, email, info, status } = order;
   const { productName, price, img } = info;
+
   return (
     <div className=" flex orders items-center ">
       <div className=" flex pb-4 items-center">
@@ -17,6 +18,10 @@ const AllOrders = ({ order, handleDeleteUser }) => {
             <p>Email : {email}</p>
           </div>
         </div>
+      </div>
+      <div>Status : {status}</div>
+      <div>
+        <button onClick={() => handleUpdate(_id)}>update</button>
       </div>
       <div className="mr-4   bg-red-600 text-white px-4 py-2 rounded-lg">
         <button onClick={() => handleDeleteUser(_id)}>Cencel Order</button>

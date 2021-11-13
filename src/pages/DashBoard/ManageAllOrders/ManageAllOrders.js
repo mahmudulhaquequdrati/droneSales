@@ -24,13 +24,30 @@ const ManageAllOrders = () => {
         .then((res) => res.json())
         .then((data) => {
           if (data.deletedCount > 0) {
-            alert("deleted successfully");
-            const remainingOrders = orders.filter((order) => order._id !== id);
-            setOrders(remainingOrders);
+            const remainingOrder = orders.filter((order) => order._id !== id);
+            setOrders(remainingOrder);
           }
         });
     }
   };
+
+  // update order status
+  const handleUpdate = (id) => {
+    console.log("clicked", id);
+    fetch(`https://drone-sales-2021.herokuapp.com/orders/update/${id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.modifiedCount > 0) {
+          alert("go to My Order page to see");
+        }
+      });
+  };
+
   return (
     <div>
       {isLoading && (
@@ -41,6 +58,7 @@ const ManageAllOrders = () => {
       {orders.map((order) => (
         <AllOrders
           key={order._id}
+          handleUpdate={handleUpdate}
           handleDeleteUser={handleDeleteUser}
           order={order}
         ></AllOrders>

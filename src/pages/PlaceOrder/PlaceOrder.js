@@ -15,7 +15,11 @@ const PlaceOrder = () => {
 
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    data.info = { productName: name, price: price, img: img };
+    data.info = {
+      productName: name,
+      price: price,
+      img: img,
+    };
     reset();
     // send data to server
     fetch(`https://drone-sales-2021.herokuapp.com/orders`, {
@@ -99,6 +103,11 @@ const PlaceOrder = () => {
               className="border w-full customTextArea"
               placeholder="Address (Ex- Banani, Dhaka)"
               {...register("address")}
+            />
+            <input
+              defaultValue="pending"
+              className="hidden"
+              {...register("status")}
             />
 
             <button className="w-28 text-gray-50 rounded-lg mt-2 p-2 bg-purple-800 ">

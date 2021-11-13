@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
   const handleOnSubmit = (e) => {
     const user = { email };
-    fetch("https://drone-sales-2021.herokuapp.com/admin", {
+    fetch("https://drone-sales-2021.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",

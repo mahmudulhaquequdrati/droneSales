@@ -30,8 +30,8 @@ const Review = () => {
 
       <Swiper slidesPerView={3} navigation={true} className="">
         {reviews.map((review) => (
-          <SwiperSlide>
-            <SingleReview review={review} key={review._id}></SingleReview>
+          <SwiperSlide key={review._id}>
+            <SingleReview review={review}></SingleReview>
           </SwiperSlide>
         ))}
       </Swiper>
