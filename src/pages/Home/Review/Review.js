@@ -1,7 +1,6 @@
 import SingleReview from "./SingleReview.js/SingleReview";
 import React, { useEffect, useState } from "react";
 
-// from shuvo
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import "swiper/swiper.scss";
 
@@ -25,7 +24,7 @@ const Review = () => {
   return (
     <div className="py-4">
       <h2 className="text-3xl text-purple-500 my-4 text-center review-text">
-        Reviews by clients
+        Client Reviews
       </h2>
 
       <Swiper navigation={true} className="">
