@@ -42,7 +42,7 @@ const Register = () => {
             alt="Workflow"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-purple-700">
-            Register your account
+            Register your account !!
           </h2>
         </div>
         {isLoading && (
