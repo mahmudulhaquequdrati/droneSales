@@ -9,7 +9,5 @@
 ## This website was build by
 
 - Tailwind-CSS
-- You can buy drones form us
-- Admin Route System is very strong
 - Firebase implemented
-- React, Node, Express, Mngodb
+- React, Node, Express, MongoDB
